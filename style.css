@@ -1,0 +1,107 @@
+:root {
+  /* colors */
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey-700: hsl(0, 0%, 20%);
+  --grey-800: hsl(0, 0%, 12%);
+  --grey-900: hsl(0, 0%, 8%);
+}
+
+/* basic reset and default styles */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--grey-900);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: "Inter", serif;
+  color: var(--white);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+ul li:last-child {
+  border-bottom: none; /* Remove border from last item */
+}
+
+/* Remove any browser-specific list styling */
+ul ul,
+ol ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  cursor: pointer;
+}
+
+/* general styles */
+
+.card-profile {
+  background-color: var(--grey-800);
+  padding: 2.5em;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-profile-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-profile-img {
+  border-radius: 50%;
+  height: 5em;
+  width: 5em;
+}
+
+.card-profile-name {
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: -8px;
+}
+
+.card-profile-location {
+  font-size: 14px;
+  color: var(--green);
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+.card-profile-qoute {
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.card-profile-social-links > ul > li {
+  background-color: var(--grey-700);
+  margin-block: 14px;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 8px;
+  padding: 0.9em 6em;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+.card-profile-social-links > ul > li:hover {
+  background-color: var(--green);
+  color: var(--grey-700);
+  opacity: 1;
+  transition: all ease-in-out 250ms;
+}
