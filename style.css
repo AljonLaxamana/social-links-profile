@@ -71,8 +71,8 @@ li {
 }
 
 .card-profile-name {
-  font-size: 24px;
-  font-weight: 400;
+  font-size: 28px;
+  font-weight: 600;
   margin-bottom: -8px;
 }
 
@@ -80,7 +80,7 @@ li {
   font-size: 14px;
   color: var(--green);
   font-weight: 600;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .card-profile-qoute {
@@ -94,14 +94,12 @@ li {
   text-align: center;
   font-size: 14px;
   border-radius: 8px;
-  padding: 0.9em 6em;
+  padding: 1em 7em;
   font-weight: 600;
-  opacity: 0.8;
 }
 
 .card-profile-social-links > ul > li:hover {
   background-color: var(--green);
   color: var(--grey-700);
-  opacity: 1;
   transition: all ease-in-out 250ms;
 }
